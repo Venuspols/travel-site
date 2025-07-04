@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>เว็บไซต์ท่องเที่ยวส่วนตัว</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #005aa7;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    h2 {
+      color: #005aa7;
+    }
+    .intro img {
+      max-width: 200px;
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .tours, .promo, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div><strong>My Travel Site</strong></div>
+    <div>
+      <a href="#home">หน้าแรก</a>
+      <a href="#promo">โปรโมชั่น</a>
+      <a href="#tours">โปรแกรมทัวร์</a>
+      <a href="#gallery">แกลเลอรี</a>
+      <a href="#booking">วิธีจอง</a>
+      <a href="#contact">ติดต่อ</a>
+    </div>
+  </nav>
+</header>
+
+<section id="home" class="intro" style="text-align: center;">
+  <img src="https://via.placeholder.com/200" alt="รูปโปรไฟล์" />
+  <h2>สวัสดีค่ะ! ฉันชื่อ [ชื่อคุณ]</h2>
+  <p>ยินดีต้อนรับสู่เว็บไซต์ท่องเที่ยวส่วนตัวของฉัน ที่นี่คุณจะพบกับทัวร์แนะนำสุดพิเศษ พร้อมบริการดี ๆ ที่คัดสรรเพื่อคุณ</p>
+</section>
+
+<section id="promo">
+  <h2>🎉 โปรโมชั่นพิเศษ</h2>
+  <div class="promo">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Japan Tour" />
+      <h3>เที่ยวญี่ปุ่น ซากุระบาน</h3>
+      <p>ลดเหลือ 35,900 บาท/คน พร้อมที่พัก 5 คืน!</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Korea Tour" />
+      <h3>เกาหลี ฤดูใบไม้เปลี่ยนสี</h3>
+      <p>รับส่วนลดทันที 10% เมื่อจองก่อนสิ้นเดือนนี้</p>
+    </div>
+  </div>
+</section>
+
+<section id="tours">
+  <h2>📍 โปรแกรมท่องเที่ยวยอดนิยม</h2>
+  <div class="tours">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Vietnam Tour" />
+      <h4>เวียดนาม ดาลัด 4 วัน 3 คืน</h4>
+      <p>ทัวร์สุดโรแมนติก เดินเล่นสวนดอกไม้ ชิมกาแฟกลางเขา</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x180" alt="Singapore Tour" />
+      <h4>สิงคโปร์ ยูนิเวอร์แซล</h4>
+      <p>ตะลุยสวนสนุก เที่ยวครบทุกแลนด์มาร์ก 3 วัน 2 คืน</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>📸 ภาพบรรยากาศจากทริป</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300x200" alt="Tour Photo 1" />
+    <img src="https://via.placeholder.com/300x200" alt="Tour Photo 2" />
+    <img src="https://via.placeholder.com/300x200" alt="Tour Photo 3" />
+  </div>
+</section>
+
+<section id="booking">
+  <h2>📝 วิธีการจอง</h2>
+  <ol>
+    <li>เลือกโปรแกรมทัวร์ที่คุณสนใจจากหน้าเว็บไซต์</li>
+    <li>ติดต่อเราผ่านช่องทางด้านล่างเพื่อตรวจสอบวันเดินทาง</li>
+    <li>โอนเงินมัดจำ 50% เพื่อยืนยันการจอง</li>
+    <li>รับเอกสารยืนยัน และเตรียมตัวเที่ยว!</li>
+  </ol>
+</section>
+
+<section id="contact">
+  <h2>📞 ติดต่อเรา</h2>
+  <p>📧 อีเมล: travel@example.com</p>
+  <p>📱 เบอร์โทร: 080-123-4567</p>
+  <p>🔗 <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+</section>
+
+<footer>
+  © 2025 เว็บไซต์ท่องเที่ยวส่วนตัว | ออกแบบโดยคุณ
+</footer>
+
+</body>
+</html>
